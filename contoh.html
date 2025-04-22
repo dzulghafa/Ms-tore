@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Product</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <div class="container mx-auto px-4 py-6">
+    <!-- Search Bar -->
+    <div class="mb-6">
+      <h1 class="text-2xl font-bold text-green-800 mb-2">Search</h1>
+      <div class="flex items-center max-w-md">
+        <input type="text" placeholder="iPhone 14 Pro" class="w-full border border-gray-300 rounded-l px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500">
+        <button class="bg-gray-200 px-4 py-2 rounded-r">
+          🔍
+        </button>
+      </div>
+      <div class="mt-2 text-sm text-gray-600">
+        <span class="font-semibold">Related:</span>
+        <button class="text-green-700 hover:underline ml-1">iphone 6s</button>
+        <button class="text-green-700 hover:underline ml-1">iphone X</button>
+        <button class="text-green-700 hover:underline ml-1">iphone 12</button>
+      </div>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="flex gap-8">
+      
+      <!-- Sidebar Filters -->
+      <aside class="w-64 shrink-0">
+        <div class="mb-4">
+          <h2 class="font-semibold mb-2">Filters</h2>
+          <ul class="space-y-1">
+            <li><label><input type="checkbox" checked class="mr-2">Handphone</label></li>
+            <li><label><input type="checkbox" class="mr-2">Case</label></li>
+            <li><label><input type="checkbox" class="mr-2">Charger</label></li>
+            <li><label><input type="checkbox" class="mr-2">Aksesoris</label></li>
+          </ul>
+        </div>
+        <div class="mb-4">
+          <h2 class="font-semibold mb-2">Warna</h2>
+          <ul class="space-y-1">
+            <li><label><input type="checkbox" class="mr-2">Merah</label></li>
+            <li><label><input type="checkbox" class="mr-2">Biru</label></li>
+            <li><label><input type="checkbox" class="mr-2">Putih</label></li>
+            <li><label><input type="checkbox" class="mr-2">Pink</label></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-semibold mb-2">Kapasitas Memory</h2>
+          <ul class="space-y-1">
+            <li><label><input type="checkbox" class="mr-2">64GB</label></li>
+            <li><label><input type="checkbox" class="mr-2">128GB</label></li>
+            <li><label><input type="checkbox" class="mr-2">256GB</label></li>
+            <li><label><input type="checkbox" class="mr-2">512GB</label></li>
+            <li><label><input type="checkbox" class="mr-2">1TB</label></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Product Grid -->
+      <section class="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Single Product Card -->
+        <div class="bg-white rounded-lg shadow p-4 text-center">
+          <img src="https://via.placeholder.com/200x200" class="mx-auto mb-2" alt="iPhone">
+          <span class="text-sm text-gray-500">Smartphone</span>
+          <span class="bg-green-100 text-green-800 text-xs font-bold ml-2 px-2 py-1 rounded">30% OFF</span>
+          <h3 class="font-semibold mt-2">Torem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          <p class="text-green-700 font-bold">Rp. 1.000.000 <span class="line-through text-gray-400 text-sm">Rp. 1.400.000</span></p>
+        </div>
+
+        <!-- Ulangi div di atas untuk 5 produk lainnya -->
+        <!-- Kamu bisa pakai loop atau komponen jika pakai framework -->
+
+      </section>
+
+    </div>
+  </div>
+
+</body>
+</html>
