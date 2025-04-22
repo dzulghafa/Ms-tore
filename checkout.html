@@ -48,14 +48,13 @@
     <!-- header -->
     <header class="fixed top-0 left-0 w-full bg-primary/30 bg-custom z-50 flex justify-between items-center py-2 px-6">
       <nav class="max-w-7xl mx-auto w-full flex justify-between items-center">
-        <div class="flex">
+        <div class="flex items-center">
           <!-- Logo -->
           <img src="image/Frame 1597883877.png" alt="Logo" class="h-10" />
-
+    
           <!-- Desktop Navigation -->
           <div class="relative space-x-4 hidden md:flex py-2 px-6">
             <a href="index.html" class="text-gray-700 hover:text-black hover:font-bold">Home</a>
-
             <div class="relative group">
               <button class="text-gray-700 hover:text-black hover:font-bold flex items-center">
                 Product
@@ -64,11 +63,11 @@
                 </svg>
               </button>
               <div class="absolute hidden group-hover:block bg-white shadow-md rounded-md mt-2 w-40">
-                <a href="product.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-11-">All Product</a>
-                <a href="detailproduct.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-11-">Detail Product</a>
+                <a href="product.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">All Product</a>
+                <a href="detailproduct.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Detail Product</a>
               </div>
             </div>
-
+    
             <div class="relative group">
               <button class="text-gray-700 hover:text-black hover:font-bold flex items-center">
                 Blog
@@ -76,44 +75,37 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-
               <div class="absolute hidden group-hover:block bg-white shadow-md rounded-md mt-2 w-40">
                 <a href="blog.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">All Blogs</a>
-                <a href="detailblog.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Detail Blog </a>
+                <a href="detailblog.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Detail Blog</a>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Icons & Button -->
-        <div class="flex items-center space-x-4">
-          <!-- Search Icon -->
-          <svg class="hover:bg-white hover:rounded-full" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0.5" y="0.499878" width="51.0002" height="51.0002" rx="25.5001" stroke="#005C53" stroke-opacity="0.5" />
-            <path
-              d="M35.0002 35.0001L30.6572 30.6571M30.6572 30.6571C31.4001 29.9142 31.9894 29.0323 32.3914 28.0616C32.7935 27.091 33.0004 26.0507 33.0004 25.0001C33.0004 23.9495 32.7935 22.9092 32.3914 21.9385C31.9894 20.9679 31.4001 20.086 30.6572 19.3431C29.9143 18.6002 29.0324 18.0109 28.0618 17.6089C27.0911 17.2068 26.0508 16.9999 25.0002 16.9999C23.9496 16.9999 22.9093 17.2068 21.9387 17.6089C20.968 18.0109 20.0861 18.6002 19.3432 19.3431C17.8429 20.8434 17 22.8783 17 25.0001C17 27.1219 17.8429 29.1568 19.3432 30.6571C20.8435 32.1574 22.8784 33.0003 25.0002 33.0003C27.122 33.0003 29.1569 32.1574 30.6572 30.6571Z"
-              stroke="#005C53"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-
-          <!-- Cart Icon -->
-          <svg class="hover:bg-white hover:rounded-full" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0.5" y="0.499878" width="51" height="51" rx="25.5" stroke="#005C53" stroke-opacity="0.5" />
-            <path d="M21 39.9999C22.1046 39.9999 23 39.1044 23 37.9999C23 36.8953 22.1046 35.9999 21 35.9999C19.8954 35.9999 19 36.8953 19 37.9999C19 39.1044 19.8954 39.9999 21 39.9999Z" fill="#005C53" />
-            <path d="M33 39.9999C34.1046 39.9999 35 39.1044 35 37.9999C35 36.8953 34.1046 35.9999 33 35.9999C31.8954 35.9999 31 36.8953 31 37.9999C31 39.1044 31.8954 39.9999 33 39.9999Z" fill="#005C53" />
-            <path d="M12 14.9999H15.375L16.3875 20.0624M16.3875 20.0624L18.75 31.8749H35.625L39 20.0624H16.3875Z" stroke="#005C53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-
-          <!-- Contact Button -->
-          <!-- Tombol Contact Us -->
-          <button class="bg-teal-900 text-white rounded-full px-6 py-2 hidden md:block hover:text-gray-400" @click="showModal = true">
-            <a href="contactpage.html">Contact Us</a>
+    
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-button" class="text-gray-700 focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
           </button>
         </div>
+    
+        <!-- Icons & Button -->
+        <div class="hidden md:flex items-center space-x-4">
+          <!-- Search, Cart, and Contact Us Button (sama seperti punyamu) -->
+          <!-- ... -->
+        </div>
       </nav>
+    
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg rounded-lg absolute top-16 left-0 w-full z-40">
+        <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+        <a href="product.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Product</a>
+        <a href="blog.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Blog</a>
+        <a href="contactpage.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact Us</a>
+      </div>
     </header>
     <!-- Main Page -->
 
@@ -298,5 +290,13 @@
         </div>
       </div>
     </footer>
+    <script>
+      const menuButton = document.getElementById('menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+    
+      menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
   </body>
 </html>
