@@ -48,37 +48,33 @@
     <title>Vite App</title>
   </head>
   <body>
-    <header class="fixed top-0 left-0 w-full bg-custom z-50 py-1 px-4">
+    <header class="fixed top-0 left-0 w-full bg-white md:bg-custom z-50 py-1 px-4">
       <nav class="max-w-7xl mx-auto flex justify-between items-center">
         <!-- Kiri: Logo & Navigasi -->
         <div class="flex items-center space-x-6">
           <!-- Logo -->
           <img src="image/Frame 1597883877.png" alt="Logo" class="h-10" />
-    
+
           <!-- Desktop Navigation -->
           <div class="hidden md:flex space-x-6">
             <a href="index.html" class="text-gray-700 hover:text-black hover:font-bold">Home</a>
-    
+
             <!-- Product -->
             <div class="relative group">
               <a href="product.html">
-                <button class="text-gray-700 hover:text-black hover:font-bold flex items-center">
-                  Product
-                </button>
+                <button class="text-gray-700 hover:text-black hover:font-bold flex items-center">Product</button>
               </a>
             </div>
-    
+
             <!-- Blog -->
             <div class="relative group">
               <a href="blog.html" class="block">
-                <button class="text-gray-700 hover:text-black hover:font-bold flex items-center">
-                  Blog
-                </button>
+                <button class="text-gray-700 hover:text-black hover:font-bold flex items-center">Blog</button>
               </a>
             </div>
           </div>
         </div>
-    
+
         <!-- Kanan: Icons & Contact Button (Desktop) -->
         <div class="hidden md:flex items-center gap-2">
           <!-- Search Icon -->
@@ -86,115 +82,109 @@
           <a href="product.html">
             <button class="text-emerald-800 rounded-full p-2 hover:bg-emerald-50">
               <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="0.5" y="0.499878" width="51.0002" height="51.0002" rx="25.5001" stroke="#005C53" stroke-opacity="0.5"/>
-                <path d="M35.0002 35.0001L30.6572 30.6571M30.6572 30.6571C31.4001 29.9142 31.9894 29.0323 32.3914 28.0616C32.7935 27.091 33.0004 26.0507 33.0004 25.0001C33.0004 23.9495 32.7935 22.9092 32.3914 21.9385C31.9894 20.9679 31.4001 20.086 30.6572 19.3431C29.9143 18.6002 29.0324 18.0109 28.0618 17.6089C27.0911 17.2068 26.0508 16.9999 25.0002 16.9999C23.9496 16.9999 22.9093 17.2068 21.9387 17.6089C20.968 18.0109 20.0861 18.6002 19.3432 19.3431C17.8429 20.8434 17 22.8783 17 25.0001C17 27.1219 17.8429 29.1568 19.3432 30.6571C20.8435 32.1574 22.8784 33.0003 25.0002 33.0003C27.122 33.0003 29.1569 32.1574 30.6572 30.6571Z" stroke="#005C53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                
+                <rect x="0.5" y="0.499878" width="51.0002" height="51.0002" rx="25.5001" stroke="#005C53" stroke-opacity="0.5" />
+                <path
+                  d="M35.0002 35.0001L30.6572 30.6571M30.6572 30.6571C31.4001 29.9142 31.9894 29.0323 32.3914 28.0616C32.7935 27.091 33.0004 26.0507 33.0004 25.0001C33.0004 23.9495 32.7935 22.9092 32.3914 21.9385C31.9894 20.9679 31.4001 20.086 30.6572 19.3431C29.9143 18.6002 29.0324 18.0109 28.0618 17.6089C27.0911 17.2068 26.0508 16.9999 25.0002 16.9999C23.9496 16.9999 22.9093 17.2068 21.9387 17.6089C20.968 18.0109 20.0861 18.6002 19.3432 19.3431C17.8429 20.8434 17 22.8783 17 25.0001C17 27.1219 17.8429 29.1568 19.3432 30.6571C20.8435 32.1574 22.8784 33.0003 25.0002 33.0003C27.122 33.0003 29.1569 32.1574 30.6572 30.6571Z"
+                  stroke="#005C53"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </button>
           </a>
-    
+
           <!-- Cart Icon -->
           <a href="checkout.html">
-            
             <button class="text-emerald-800 rounded-full p-2 hover:bg-emerald-50">
               <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="0.5" y="0.499878" width="51" height="51" rx="25.5" stroke="#005C53" stroke-opacity="0.5"/>
-                <path d="M21 39.9999C22.1046 39.9999 23 39.1044 23 37.9999C23 36.8953 22.1046 35.9999 21 35.9999C19.8954 35.9999 19 36.8953 19 37.9999C19 39.1044 19.8954 39.9999 21 39.9999Z" fill="#005C53"/>
-                <path d="M33 39.9999C34.1046 39.9999 35 39.1044 35 37.9999C35 36.8953 34.1046 35.9999 33 35.9999C31.8954 35.9999 31 36.8953 31 37.9999C31 39.1044 31.8954 39.9999 33 39.9999Z" fill="#005C53"/>
-                <path d="M12 14.9999H15.375L16.3875 20.0624M16.3875 20.0624L18.75 31.8749H35.625L39 20.0624H16.3875Z" stroke="#005C53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                
-                
+                <rect x="0.5" y="0.499878" width="51" height="51" rx="25.5" stroke="#005C53" stroke-opacity="0.5" />
+                <path d="M21 39.9999C22.1046 39.9999 23 39.1044 23 37.9999C23 36.8953 22.1046 35.9999 21 35.9999C19.8954 35.9999 19 36.8953 19 37.9999C19 39.1044 19.8954 39.9999 21 39.9999Z" fill="#005C53" />
+                <path d="M33 39.9999C34.1046 39.9999 35 39.1044 35 37.9999C35 36.8953 34.1046 35.9999 33 35.9999C31.8954 35.9999 31 36.8953 31 37.9999C31 39.1044 31.8954 39.9999 33 39.9999Z" fill="#005C53" />
+                <path d="M12 14.9999H15.375L16.3875 20.0624M16.3875 20.0624L18.75 31.8749H35.625L39 20.0624H16.3875Z" stroke="#005C53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </button>
           </a>
-    
+
           <!-- Contact Us -->
-          <a href="contactpage.html"
-            class="bg-emerald-800 text-white px-4 py-2 rounded-full font-medium hover:bg-emerald-700 transition">
-            Contact Us
-          </a>
+          <a href="contactpage.html" class="bg-emerald-800 text-white px-4 py-2 rounded-full font-medium hover:bg-emerald-700 transition"> Contact Us </a>
         </div>
-    
+
         <!-- Mobile Hamburger -->
         <div class="md:hidden flex items-center gap-3">
           <a href="product.html">
-
-            <button >
+            <button>
               <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.6177 17L13.7573 13.1396M13.7573 13.1396C14.4176 12.4793 14.9414 11.6953 15.2988 10.8326C15.6562 9.96978 15.8401 9.04507 15.8401 8.11121C15.8401 7.17735 15.6562 6.25264 15.2988 5.38987C14.9414 4.5271 14.4176 3.74316 13.7573 3.08283C13.0969 2.42249 12.313 1.89868 11.4502 1.54131C10.5875 1.18394 9.66275 1 8.72889 1C7.79503 1 6.87032 1.18394 6.00755 1.54131C5.14477 1.89868 4.36084 2.42249 3.7005 3.08283C2.36689 4.41644 1.61768 6.2252 1.61768 8.11121C1.61768 9.99722 2.36689 11.806 3.7005 13.1396C5.03411 14.4732 6.84288 15.2224 8.72889 15.2224C10.6149 15.2224 12.4237 14.4732 13.7573 13.1396Z" stroke="#005C53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <path
+                  d="M17.6177 17L13.7573 13.1396M13.7573 13.1396C14.4176 12.4793 14.9414 11.6953 15.2988 10.8326C15.6562 9.96978 15.8401 9.04507 15.8401 8.11121C15.8401 7.17735 15.6562 6.25264 15.2988 5.38987C14.9414 4.5271 14.4176 3.74316 13.7573 3.08283C13.0969 2.42249 12.313 1.89868 11.4502 1.54131C10.5875 1.18394 9.66275 1 8.72889 1C7.79503 1 6.87032 1.18394 6.00755 1.54131C5.14477 1.89868 4.36084 2.42249 3.7005 3.08283C2.36689 4.41644 1.61768 6.2252 1.61768 8.11121C1.61768 9.99722 2.36689 11.806 3.7005 13.1396C5.03411 14.4732 6.84288 15.2224 8.72889 15.2224C10.6149 15.2224 12.4237 14.4732 13.7573 13.1396Z"
+                  stroke="#005C53"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </button>
           </a>
           <a href="checkout.html">
-            <button >
+            <button>
               <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.57999 18.2787C8.31155 18.2787 8.9046 17.6857 8.9046 16.9541C8.9046 16.2226 8.31155 15.6295 7.57999 15.6295C6.84842 15.6295 6.25537 16.2226 6.25537 16.9541C6.25537 17.6857 6.84842 18.2787 7.57999 18.2787Z" fill="#005C53"/>
-                <path d="M15.5248 18.2787C16.2564 18.2787 16.8494 17.6857 16.8494 16.9541C16.8494 16.2226 16.2564 15.6295 15.5248 15.6295C14.7932 15.6295 14.2002 16.2226 14.2002 16.9541C14.2002 17.6857 14.7932 18.2787 15.5248 18.2787Z" fill="#005C53"/>
-                <path d="M1.61768 1.72119H3.85296L4.52355 5.07412M4.52355 5.07412L6.08825 12.8976H17.2647L19.5 5.07412H4.52355Z" stroke="#005C53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                
-                
+                <path
+                  d="M7.57999 18.2787C8.31155 18.2787 8.9046 17.6857 8.9046 16.9541C8.9046 16.2226 8.31155 15.6295 7.57999 15.6295C6.84842 15.6295 6.25537 16.2226 6.25537 16.9541C6.25537 17.6857 6.84842 18.2787 7.57999 18.2787Z"
+                  fill="#005C53"
+                />
+                <path
+                  d="M15.5248 18.2787C16.2564 18.2787 16.8494 17.6857 16.8494 16.9541C16.8494 16.2226 16.2564 15.6295 15.5248 15.6295C14.7932 15.6295 14.2002 16.2226 14.2002 16.9541C14.2002 17.6857 14.7932 18.2787 15.5248 18.2787Z"
+                  fill="#005C53"
+                />
+                <path d="M1.61768 1.72119H3.85296L4.52355 5.07412M4.52355 5.07412L6.08825 12.8976H17.2647L19.5 5.07412H4.52355Z" stroke="#005C53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </button>
           </a>
           <button id="menu-button">
             <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3.5 2H17.5C17.7652 2 18.0196 1.89464 18.2071 1.70711C18.3946 1.51957 18.5 1.26522 18.5 1C18.5 0.734784 18.3946 0.48043 18.2071 0.292893C18.0196 0.105357 17.7652 0 17.5 0H3.5C3.23478 0 2.98043 0.105357 2.79289 0.292893C2.60536 0.48043 2.5 0.734784 2.5 1C2.5 1.26522 2.60536 1.51957 2.79289 1.70711C2.98043 1.89464 3.23478 2 3.5 2ZM19.5 5H1.5C1.23478 5 0.98043 5.10536 0.792893 5.29289C0.605357 5.48043 0.5 5.73478 0.5 6C0.5 6.26522 0.605357 6.51957 0.792893 6.70711C0.98043 6.89464 1.23478 7 1.5 7H19.5C19.7652 7 20.0196 6.89464 20.2071 6.70711C20.3946 6.51957 20.5 6.26522 20.5 6C20.5 5.73478 20.3946 5.48043 20.2071 5.29289C20.0196 5.10536 19.7652 5 19.5 5ZM17.5 10H3.5C3.23478 10 2.98043 10.1054 2.79289 10.2929C2.60536 10.4804 2.5 10.7348 2.5 11C2.5 11.2652 2.60536 11.5196 2.79289 11.7071C2.98043 11.8946 3.23478 12 3.5 12H17.5C17.7652 12 18.0196 11.8946 18.2071 11.7071C18.3946 11.5196 18.5 11.2652 18.5 11C18.5 10.7348 18.3946 10.4804 18.2071 10.2929C18.0196 10.1054 17.7652 10 17.5 10Z" fill="#005C53"/>
-              </svg>
-              
+              <path
+                d="M3.5 2H17.5C17.7652 2 18.0196 1.89464 18.2071 1.70711C18.3946 1.51957 18.5 1.26522 18.5 1C18.5 0.734784 18.3946 0.48043 18.2071 0.292893C18.0196 0.105357 17.7652 0 17.5 0H3.5C3.23478 0 2.98043 0.105357 2.79289 0.292893C2.60536 0.48043 2.5 0.734784 2.5 1C2.5 1.26522 2.60536 1.51957 2.79289 1.70711C2.98043 1.89464 3.23478 2 3.5 2ZM19.5 5H1.5C1.23478 5 0.98043 5.10536 0.792893 5.29289C0.605357 5.48043 0.5 5.73478 0.5 6C0.5 6.26522 0.605357 6.51957 0.792893 6.70711C0.98043 6.89464 1.23478 7 1.5 7H19.5C19.7652 7 20.0196 6.89464 20.2071 6.70711C20.3946 6.51957 20.5 6.26522 20.5 6C20.5 5.73478 20.3946 5.48043 20.2071 5.29289C20.0196 5.10536 19.7652 5 19.5 5ZM17.5 10H3.5C3.23478 10 2.98043 10.1054 2.79289 10.2929C2.60536 10.4804 2.5 10.7348 2.5 11C2.5 11.2652 2.60536 11.5196 2.79289 11.7071C2.98043 11.8946 3.23478 12 3.5 12H17.5C17.7652 12 18.0196 11.8946 18.2071 11.7071C18.3946 11.5196 18.5 11.2652 18.5 11C18.5 10.7348 18.3946 10.4804 18.2071 10.2929C18.0196 10.1054 17.7652 10 17.5 10Z"
+                fill="#005C53"
+              />
+            </svg>
           </button>
         </div>
       </nav>
-    
+
       <!-- Mobile Dropdown -->
-      <div id="mobile-menu"
-        class="md:hidden hidden bg-white shadow-lg rounded-lg absolute top-16 left-0 w-full z-40">
+      <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg rounded-lg absolute top-12 left-0 w-full z-40">
         <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
-    
+
         <!-- Product -->
         <div class="border-t px-4 py-2">
           <a href="product.html">
-
-            <button  class="w-full flex justify-between items-center text-gray-700">
-              Product
-  
-            </button>
+            <button class="w-full flex justify-between items-center text-gray-700">Product</button>
           </a>
-
         </div>
-    
+
         <!-- Blog -->
         <div class="border-t px-4 py-2">
           <a href="blog.html">
-
-            <button  class="w-full flex justify-between items-center text-gray-700">
-              Blog
-  
-            </button>
+            <button class="w-full flex justify-between items-center text-gray-700">Blog</button>
           </a>
-
         </div>
-    
       </div>
-
-      
     </header>
-    
 
-    
-    
     <!-- Hero Section -->
-    <section class="pt-20 md:pt-36 pb-20 px-6 w-full relative bg-custom" style="padding-bottom: 0">
+    <section class="pt-28 md:pt-36 pb-20 px-6 w-full relative bg-gradient-to-t from-green-50 to-white" style="padding-bottom: 0">
       <!-- search mobile -->
-      <div class="block md:hidden relative bg-gray-300 border-emerald-800 rounded-full border-2 px-4 py-2 mb-5">
-        <!-- Icon di dalam input -->
-        <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
-          <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z" />
-          </svg>
+      <div class="flex justify-center items-center">
+        <div id="search-mobile" class="block md:hidden fixed top-[60px] bg-custom bg-opacity-50 transition-all duration-300 z-40 px-4 py-2 mb-5 border-emerald-800 border-2 rounded-full">
+          <!-- Icon di dalam input -->
+          <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+            <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z" />
+            </svg>
+          </div>
+          <input class="pl-10 w-full" placeholder="Cari Sesuatu...." />
         </div>
-        <input class="pl-10" placeholder="Cari Sesuatu....">
       </div>
-
 
       <div class="max-w-6xl mx-auto text-center">
         <h1 class="bricolage-700 text-5xl md:text-[7rem] font-bold text-green-900 mb-6" data-aos="zoom-out" data-aos-delay="100">
@@ -207,7 +197,7 @@
         </p>
         <div class="flex justify-center space-x-6">
           <!-- Shopee Button -->
-          <a href="#" class="flex items-center space-x-2 bg-green-900 text-white px-5 py-3 rounded-full shadow-lg hover:bg-green-800 transition" data-aos="fade-left" data-aos-delay="300" style="width: fit-content;">
+          <a href="#" class="bg-green-800 text-white text-xs px-2 py-1 rounded-full flex items-center gap-1 hover:scale-105 transition-transform" style="width: fit-content">
             <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <rect x="0.256836" y="0.108154" width="39.7838" height="39.7838" fill="url(#pattern0_1_1231)" />
               <defs>
@@ -224,12 +214,12 @@
               </defs>
             </svg>
             <div class="text-left">
-              <div class="text-xs">Available on the</div>
-              <div class="font-bold text-sm">Shopee</div>
+              <div class="text-[10px] md:text-xs">Available on the</div>
+              <div class="font-bold text-xs :mdtext-sm">Shopee</div>
             </div>
           </a>
           <!-- Tokopedia Button -->
-          <a href="#" class="flex items-center space-x-2 bg-green-900 text-white px-5 py-3 rounded-full shadow-lg hover:bg-green-800 transition" data-aos="fade-right" data-aos-delay="300" style="width: fit-content;">
+          <a href="#" class="bg-green-800 text-white text-xs px-2 py-1 rounded-full flex items-center gap-1 hover:scale-105 transition-transform" style="width: fit-content">
             <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <rect x="0.635254" y="0.108154" width="39.7838" height="39.7838" fill="url(#pattern0_1_1237)" />
               <defs>
@@ -246,8 +236,8 @@
               </defs>
             </svg>
             <div class="text-left">
-              <div class="text-xs">Available on the</div>
-              <div class="font-bold text-sm">Tokopedia</div>
+              <div class="text-[10px] md:text-xs">Available on the</div>
+              <div class="font-bold text-xs md:text-sm">Tokopedia</div>
             </div>
           </a>
         </div>
@@ -257,7 +247,7 @@
       </div>
     </section>
 
-    <section class="py-20 px-4 sm:py-28 sm:px-6 bg-white" >
+    <section class="py-20 px-4 sm:py-28 sm:px-6 bg-white">
       <div class="max-w-6xl mx-auto text-center grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <!-- Kiri: Judul dan Deskripsi -->
         <div data-aos="fade-up" data-aos-delay="100">
@@ -265,74 +255,79 @@
             Produk favorit <br />
             kami bulan ini
           </h2>
-          <p class="text-gray-600 leading-relaxed text-base sm:text-lg">
-            Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan...
-          </p>
+          <p class="text-gray-600 leading-relaxed text-base sm:text-lg">Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan...</p>
         </div>
-    
+
         <!-- Kanan: Kartu Produk -->
         <div class="grid grid-cols-2 gap-4 sm:gap-6 items-start">
           <!-- Card 1 -->
           <div class="bg-white shadow-lg rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
             <img src="image/apple_watch.png" alt="iWatch" class="w-full h-40 sm:h-52 object-cover" />
             <div class="p-4">
-              <p class="text-gray-400 text-sm mb-1">
-                Aksesoris
-                <span class="bg-green-100 text-green-700 text-xs px-2 py-1 rounded ml-2">50% OFF</span>
-              </p>
-              <h3 class="font-semibold text-md sm:text-lg">iWatch Sereas 7</h3>
-              <p class="text-green-700 font-bold">
-                Rp. 2.000.000,-
-                <span class="text-gray-400 line-through text-sm ml-1">Rp. 6.000.000,-</span>
-              </p>
+              <p class="text-gray-400 text-sm mb-1">Aksesoris</p>
+              <h3 class="font-semibold text-sm sm:text-lg">iWatch Sereas 7</h3>
+              <p class="text-green-700 text-xs md:text-base font-bold">Rp. 2.000.000,-</p>
             </div>
           </div>
-    
+
           <!-- Card 2 -->
-          <div class="bg-white shadow-lg rounded-xl overflow-hidden" style="margin-top :67px;" data-aos="fade-down" data-aos-delay="200">
+          <div class="bg-white shadow-lg rounded-xl overflow-hidden" style="margin-top: 67px" data-aos="fade-down" data-aos-delay="200">
             <img src="image/iPhone.png" alt="iPhone 14" class="w-full h-40 sm:h-52 object-cover" />
             <div class="p-4">
               <p class="text-gray-400 text-sm mb-1">Phone And Tablet</p>
-              <h3 class="font-semibold text-md sm:text-lg">iPhone 14</h3>
-              <p class="text-green-700 font-bold">Rp. 12.000.000,-</p>
+              <h3 class="font-semibold text-md sm:text-base">iPhone 14</h3>
+              <p class="text-green-700 text-xs md:text-base font-bold">Rp. 12.000.000,-</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
+
     <section class="relative bg-custom py-20 px-6" data-aos="fade-up" data-aos-delay="100">
       <div class="max-w-7xl mx-auto text-center mb-16">
         <h2 class="bricolage-font text-4xl md:text-5xl font-bold text-green-900 mb-4">Produk Kami</h2>
         <p class="text-gray-600 max-w-2xl mx-auto">Forem ipsum dolor sit amet, consv sdfa;ls jsdlfka sdiqha kdlsah gilasah sidka ksddi ectetur adipiscing elit.</p>
       </div>
 
-      <div class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         <!-- Kartu Produk -->
         <a href="detailproduct.html" class="block" target="_blank">
           <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-            <img src="image/14pro.png" alt="Produk" class="w-full h-auto object-cover" />
-            <div class="p-4">
-              <p class="text-gray-500 text-sm mb-1">Smartphone <span class="ml-2 bg-green-800 text-white text-xs px-2 py-1 rounded-full">30% OFF</span></p>
-              <h3 class="font-semibold text-lg leading-tight">iPhone 14 Pro max 12gb ram 512gb storage</h3>
-              <p class="text-green-700 font-bold">
+            <!-- Gambar Produk -->
+            <img src="image/14pro.png" alt="Produk" class="w-full h-auto object-cover max-w-full" />
+
+            <!-- Konten -->
+            <div class="p-2 md:p-4">
+              <!-- Kategori + Diskon -->
+              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+
+              <!-- Nama Produk -->
+              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+
+              <!-- Harga -->
+              <p class="text-green-700 font-bold text-xs sm:text-base">
                 Rp. 1.000.000,-
-                <span class="text-gray-400 line-through text-sm ml-2">Rp. 1.100.000,-</span>
+                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
               </p>
             </div>
           </div>
         </a>
+
         <!-- Kartu Produk 2 -->
         <a href="detailproduct.html" class="block" target="_blank">
-
           <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
             <img src="image/16pro.png" alt="Produk" class="w-full h-auto object-cover" />
-            <div class="p-4">
-              <p class="text-gray-500 text-sm mb-1">Smartphone <span class="ml-2 bg-green-800 text-white text-xs px-2 py-1 rounded-full">30% OFF</span></p>
-              <h3 class="font-semibold text-lg leading-tight">iPhone 14 Pro max 12gb ram 512gb storage</h3>
-              <p class="text-green-700 font-bold">
+            <div class="p-2 md:p-4">
+              <!-- Kategori + Diskon -->
+              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+
+              <!-- Nama Produk -->
+              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+
+              <!-- Harga -->
+              <p class="text-green-700 font-bold text-xs sm:text-base">
                 Rp. 1.000.000,-
-                <span class="text-gray-400 line-through text-sm ml-2">Rp. 1.100.000,-</span>
+                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
               </p>
             </div>
           </div>
@@ -340,45 +335,57 @@
 
         <!-- Kartu Produk 3-->
         <a href="detailproduct.html" class="block" target="_blank">
-          
           <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
             <img src="image/16white.png" alt="Produk" class="w-full h-auto object-cover" />
-            <div class="p-4">
-              <p class="text-gray-500 text-sm mb-1">Smartphone <span class="ml-2 bg-green-800 text-white text-xs px-2 py-1 rounded-full">30% OFF</span></p>
-              <h3 class="font-semibold text-lg leading-tight">iPhone 14 Pro max 12gb ram 512gb storage</h3>
-              <p class="text-green-700 font-bold">
+            <div class="p-2 md:p-4">
+              <!-- Kategori + Diskon -->
+              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+
+              <!-- Nama Produk -->
+              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+
+              <!-- Harga -->
+              <p class="text-green-700 font-bold text-xs sm:text-base">
                 Rp. 1.000.000,-
-                <span class="text-gray-400 line-through text-sm ml-2">Rp. 1.100.000,-</span>
+                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
               </p>
             </div>
           </div>
         </a>
         <!-- Kartu Produk 4-->
         <a href="detailproduct.html" class="block" target="_blank">
-          
           <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="400">
             <img src="image/16prowhite.png" alt="Produk" class="w-full h-auto object-cover" />
-            <div class="p-4">
-              <p class="text-gray-500 text-sm mb-1">Smartphone <span class="ml-2 bg-green-800 text-white text-xs px-2 py-1 rounded-full">30% OFF</span></p>
-              <h3 class="font-semibold text-lg leading-tight">iPhone 14 Pro max 12gb ram 512gb storage</h3>
-              <p class="text-green-700 font-bold">
+            <div class="p-2 md:p-4">
+              <!-- Kategori + Diskon -->
+              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+
+              <!-- Nama Produk -->
+              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+
+              <!-- Harga -->
+              <p class="text-green-700 font-bold text-xs sm:text-base">
                 Rp. 1.000.000,-
-                <span class="text-gray-400 line-through text-sm ml-2">Rp. 1.100.000,-</span>
+                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
               </p>
             </div>
           </div>
         </a>
         <!-- Kartu Produk 5 -->
         <a href="detailproduct.html" class="block" target="_blank">
-          
           <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="500">
             <img src="image/15pro.png" alt="Produk" class="w-full h-auto object-cover" />
-            <div class="p-4">
-              <p class="text-gray-500 text-sm mb-1">Smartphone <span class="ml-2 bg-green-800 text-white text-xs px-2 py-1 rounded-full">30% OFF</span></p>
-              <h3 class="font-semibold text-lg leading-tight">iPhone 14 Pro max 12gb ram 512gb storage</h3>
-              <p class="text-green-700 font-bold">
+            <div class="p-2 md:p-4">
+              <!-- Kategori + Diskon -->
+              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+
+              <!-- Nama Produk -->
+              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+
+              <!-- Harga -->
+              <p class="text-green-700 font-bold text-xs sm:text-base">
                 Rp. 1.000.000,-
-                <span class="text-gray-400 line-through text-sm ml-2">Rp. 1.100.000,-</span>
+                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
               </p>
             </div>
           </div>
@@ -387,27 +394,37 @@
         <a href="detailproduct.html" class="block" target="_blank">
           <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="600">
             <img src="image/macbookair1.png" alt="Produk" class="w-full h-auto object-cover" />
-            <div class="p-4">
-              <p class="text-gray-500 text-sm mb-1">Smartphone <span class="ml-2 bg-green-800 text-white text-xs px-2 py-1 rounded-full">30% OFF</span></p>
-              <h3 class="font-semibold text-lg leading-tight">iPhone 14 Pro max 12gb ram 512gb storage</h3>
-              <p class="text-green-700 font-bold">
+            <div class="p-2 md:p-4">
+              <!-- Kategori + Diskon -->
+              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+
+              <!-- Nama Produk -->
+              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+
+              <!-- Harga -->
+              <p class="text-green-700 font-bold text-xs sm:text-base">
                 Rp. 1.000.000,-
-                <span class="text-gray-400 line-through text-sm ml-2">Rp. 1.100.000,-</span>
+                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
               </p>
             </div>
           </div>
         </a>
-          
+
         <!-- Kartu Produk 7-->
         <a href="detailproduct.html" class="block" target="_blank">
           <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="700">
             <img src="image/macbookair2.png" alt="Produk" class="w-full h-auto object-cover" />
-            <div class="p-4">
-              <p class="text-gray-500 text-sm mb-1">Smartphone <span class="ml-2 bg-green-800 text-white text-xs px-2 py-1 rounded-full">30% OFF</span></p>
-              <h3 class="font-semibold text-lg leading-tight">iPhone 14 Pro max 12gb ram 512gb storage</h3>
-              <p class="text-green-700 font-bold">
+            <div class="p-2 md:p-4">
+              <!-- Kategori + Diskon -->
+              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+
+              <!-- Nama Produk -->
+              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+
+              <!-- Harga -->
+              <p class="text-green-700 font-bold text-xs sm:text-base">
                 Rp. 1.000.000,-
-                <span class="text-gray-400 line-through text-sm ml-2">Rp. 1.100.000,-</span>
+                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
               </p>
             </div>
           </div>
@@ -416,12 +433,17 @@
         <a href="detailproduct.html" class="block" target="_blank">
           <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="800">
             <img src="image/asus.png" alt="Produk" class="w-full h-auto object-cover" />
-            <div class="p-4">
-              <p class="text-gray-500 text-sm mb-1">Smartphone <span class="ml-2 bg-green-800 text-white text-xs px-2 py-1 rounded-full">30% OFF</span></p>
-              <h3 class="font-semibold text-lg leading-tight">iPhone 14 Pro max 12gb ram 512gb storage</h3>
-              <p class="text-green-700 font-bold">
+            <div class="p-2 md:p-4">
+              <!-- Kategori + Diskon -->
+              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+
+              <!-- Nama Produk -->
+              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+
+              <!-- Harga -->
+              <p class="text-green-700 font-bold text-xs sm:text-base">
                 Rp. 1.000.000,-
-                <span class="text-gray-400 line-through text-sm ml-2">Rp. 1.100.000,-</span>
+                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
               </p>
             </div>
           </div>
@@ -430,12 +452,17 @@
         <a href="detailproduct.html" class="block" target="_blank">
           <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="900">
             <img src="image/vivobook.png" alt="Produk" class="w-full h-auto object-cover" />
-            <div class="p-4">
-              <p class="text-gray-500 text-sm mb-1">Smartphone <span class="ml-2 bg-green-800 text-white text-xs px-2 py-1 rounded-full">30% OFF</span></p>
-              <h3 class="font-semibold text-lg leading-tight">iPhone 14 Pro max 12gb ram 512gb storage</h3>
-              <p class="text-green-700 font-bold">
+            <div class="p-2 md:p-4">
+              <!-- Kategori + Diskon -->
+              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+
+              <!-- Nama Produk -->
+              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+
+              <!-- Harga -->
+              <p class="text-green-700 font-bold text-xs sm:text-base">
                 Rp. 1.000.000,-
-                <span class="text-gray-400 line-through text-sm ml-2">Rp. 1.100.000,-</span>
+                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
               </p>
             </div>
           </div>
@@ -444,12 +471,17 @@
         <a href="detailproduct.html" class="block" target="_blank">
           <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="1000">
             <img src="image/airbuds1.png" alt="Produk" class="w-full h-auto object-cover" />
-            <div class="p-4">
-              <p class="text-gray-500 text-sm mb-1">Smartphone <span class="ml-2 bg-green-800 text-white text-xs px-2 py-1 rounded-full">30% OFF</span></p>
-              <h3 class="font-semibold text-lg leading-tight">iPhone 14 Pro max 12gb ram 512gb storage</h3>
-              <p class="text-green-700 font-bold">
+            <div class="p-2 md:p-4">
+              <!-- Kategori + Diskon -->
+              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+
+              <!-- Nama Produk -->
+              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+
+              <!-- Harga -->
+              <p class="text-green-700 font-bold text-xs sm:text-base">
                 Rp. 1.000.000,-
-                <span class="text-gray-400 line-through text-sm ml-2">Rp. 1.100.000,-</span>
+                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
               </p>
             </div>
           </div>
@@ -458,12 +490,17 @@
         <a href="detailproduct.html" class="block" target="_blank">
           <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="1100">
             <img src="image/headphone.png" alt="Produk" class="w-full h-auto object-cover" />
-            <div class="p-4">
-              <p class="text-gray-500 text-sm mb-1">Smartphone <span class="ml-2 bg-green-800 text-white text-xs px-2 py-1 rounded-full">30% OFF</span></p>
-              <h3 class="font-semibold text-lg leading-tight">iPhone 14 Pro max 12gb ram 512gb storage</h3>
-              <p class="text-green-700 font-bold">
+            <div class="p-2 md:p-4">
+              <!-- Kategori + Diskon -->
+              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+
+              <!-- Nama Produk -->
+              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+
+              <!-- Harga -->
+              <p class="text-green-700 font-bold text-xs sm:text-base">
                 Rp. 1.000.000,-
-                <span class="text-gray-400 line-through text-sm ml-2">Rp. 1.100.000,-</span>
+                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
               </p>
             </div>
           </div>
@@ -472,12 +509,17 @@
         <a href="detailproduct.html" class="block" target="_blank">
           <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="1200">
             <img src="image/headphone2.png" alt="Produk" class="w-full h-auto object-cover" />
-            <div class="p-4">
-              <p class="text-gray-500 text-sm mb-1">Smartphone <span class="ml-2 bg-green-800 text-white text-xs px-2 py-1 rounded-full">30% OFF</span></p>
-              <h3 class="font-semibold text-lg leading-tight">iPhone 14 Pro max 12gb ram 512gb storage</h3>
-              <p class="text-green-700 font-bold">
+            <div class="p-2 md:p-4">
+              <!-- Kategori + Diskon -->
+              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+
+              <!-- Nama Produk -->
+              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+
+              <!-- Harga -->
+              <p class="text-green-700 font-bold text-xs sm:text-base">
                 Rp. 1.000.000,-
-                <span class="text-gray-400 line-through text-sm ml-2">Rp. 1.100.000,-</span>
+                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
               </p>
             </div>
           </div>
@@ -492,20 +534,16 @@
         <button class="bg-green-900 text-white text-sm px-6 py-2 rounded-full shadow-md hover:bg-green-800 transition">Lihat selengkapnya</button>
       </div>
 
-      <div
-      class="relative max-w-6xl mx-auto text-center bg-green-900 rounded-3xl px-6 md:px-16 pt-3 md:pt-6  flex flex-col md:flex-row justify-between items-center gap-6 text-white shadow-lg"
-      data-aos="zoom-in"
-      data-aos-delay="100"
-      >
+      <div class="relative max-w-6xl mx-auto text-center bg-green-900 rounded-3xl px-6 md:px-16 pt-3 md:pt-6 flex flex-col md:flex-row justify-between items-center gap-6 text-white shadow-lg" data-aos="zoom-in" data-aos-delay="100">
         <!-- Teks & Tombol Marketplace -->
-        <div class="text-left px-7">
-          <h2 class="bricolage-font text-2xl md:text-4xl font-semibold leading-tight mb-6">
+        <div class="text-center px-7">
+          <h2 class="bricolage-font text-2xl sm:text-2xl md:text-4xl font-semibold leading-tight mb-6">
             “membantu anda <br />
             menemukan <br />
             produk terbaik”
           </h2>
-          <div class="flex items-center gap-1.5">
-            <a href="#" class="bg-a text-black text-sm px-4 py-2 rounded-full flex items-center gap-2 hover:scale-105 transition transform" style="width: fit-content">
+          <div class="flex items-center justify-center gap-2">
+            <a href="#" class="bg-a text-black text-xs px-2 py-1 rounded-full flex items-center gap-1 hover:scale-105 transition-transform" style="width: fit-content">
               <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect x="0.256836" y="0.108154" width="39.7838" height="39.7838" fill="url(#pattern0_1_1231)" />
                 <defs>
@@ -521,12 +559,12 @@
                   />
                 </defs>
               </svg>
-              <div class="text-left leading-tight">
-                <span class="block text-xs text-white whitespace-nowrap">Available on the</span>
-                <span class="block text-base font-bold text-white">Shopee</span>
+              <div class="text-center leading-tight">
+                <span class="block text-[9px] text-white whitespace-nowrap leading-none">Available on the</span>
+                <span class="block text-xs font-bold text-white leading-none">Shopee</span>
               </div>
             </a>
-            <a href="#" class="bg-a text-black text-sm px-4 py-2 rounded-full flex items-center gap-2 hover:scale-105 transition transform" style="width: fit-content">
+            <a href="#" class="bg-a text-black text-xs px-2 py-1 rounded-full flex items-center gap-1 hover:scale-105 transition-transform" style="width: fit-content">
               <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect x="0.635254" y="0.108154" width="39.7838" height="39.7838" fill="url(#pattern0_1_1237)" />
                 <defs>
@@ -542,21 +580,21 @@
                   />
                 </defs>
               </svg>
-              <div class="text-left leading-tight">
-                <span class="block text-xs text-white whitespace-nowrap">Available on the</span>
-                <span class="block text-base font-bold text-white">Tokopedia</span>
+              <div class="text-center leading-tight">
+                <span class="block text-[9px] text-white whitespace-nowrap leading-none">Available on the</span>
+                <span class="block text-xs font-bold text-white leading-none">Tokopedia</span>
               </div>
             </a>
           </div>
         </div>
 
         <!-- Gambar HP -->
-        <div class="flex justify-center md:justify-start items-end pt-0 relative w-full md:w-4xl pb-0">
+        <div class="flex justify-center md:justify-start items-end pt-0 relative w-full md:w-4xl pb-0 md:pb-0">
           <img src="image/jamip.png" alt="Produk" class="w-72 sm:w-80 md:w-auto object-contain" />
         </div>
-        
       </div>
     </section>
+    <!-- tokopedia -->
 
     <footer class="bg-white pt-32 pb-6 px-6 md:px-16">
       <div class="max-w-7xl mx-auto">
@@ -566,7 +604,7 @@
             <img src="image/Frame 1597883877.png" alt="Logo" class="h-10 mb-4" />
             <p class="text-gray-500 text-sm max-w-xs">Cari Barang Bagus Dan Berkualitas, Mangstore solusinya!</p>
           </div>
-    
+
           <!-- Menu Mangstore -->
           <div class="hidden md:block">
             <h4 class="font-semibold mb-4">Mangstore</h4>
@@ -577,7 +615,7 @@
               <li><a href="#">Blog</a></li>
             </ul>
           </div>
-    
+
           <!-- Menu Beli -->
           <div class="hidden md:block">
             <h4 class="font-semibold mb-4">Beli</h4>
@@ -591,10 +629,10 @@
               <li><a href="#">Toys & Hobbies</a></li>
             </ul>
           </div>
-    
+
           <!-- Kerjasama -->
           <div class="flex flex-row md:flex-col items-center justify-center md:items-start gap-3">
-            <a href="#" class="bg-a text-black text-sm px-4 py-2 rounded-full flex items-center gap-2 hover:scale-105 transition transform" style="width: fit-content">
+            <a href="#" class="bg-a text-black text-xs px-2 py-1 rounded-full flex items-center gap-1 hover:scale-105 transition-transform" style="width: fit-content">
               <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect x="0.256836" y="0.108154" width="39.7838" height="39.7838" fill="url(#pattern0_1_1231)" />
                 <defs>
@@ -615,7 +653,7 @@
                 <span class="block text-base font-bold text-white">Shopee</span>
               </div>
             </a>
-            <a href="#" class="bg-a text-black text-sm px-4 py-2 rounded-full flex items-center gap-2 hover:scale-105 transition transform" style="width: fit-content">
+            <a href="#" class="bg-a text-black text-xs px-2 py-1 rounded-full flex items-center gap-1 hover:scale-105 transition-transform" style="width: fit-content">
               <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect x="0.635254" y="0.108154" width="39.7838" height="39.7838" fill="url(#pattern0_1_1237)" />
                 <defs>
@@ -637,10 +675,8 @@
               </div>
             </a>
           </div>
-          
-          
         </div>
-    
+
         <!-- Bottom -->
         <div class="flex flex-col md:flex-row justify-between items-center border-t pt-6 mt-10 text-sm text-green-800 gap-4">
           <!-- Sosial Media -->
@@ -650,13 +686,12 @@
             <a href="#"><i class="fab fa-linkedin"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
           </div>
-    
+
           <!-- Copyright -->
           <div class="text-center">© 2023 Mangcoding. All rights reserved.</div>
         </div>
       </div>
     </footer>
-    
 
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
@@ -666,11 +701,48 @@
     </script>
     <!-- JS for toggling mobile menu and submenus -->
     <script>
-      const menuButton = document.getElementById('menu-button');
-      const mobileMenu = document.getElementById('mobile-menu');
-    
-      menuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
+      const menuButton = document.getElementById("menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      // Toggle visibility of the mobile menu when the menu button is clicked
+      menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Close the mobile menu when the user clicks outside of it
+      window.addEventListener("click", (event) => {
+        if (!event.target.closest("#mobile-menu") && !event.target.closest("#menu-button")) {
+          mobileMenu.classList.add("hidden");
+        }
+      });
+
+      // Close the mobile menu when the user scrolls
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+          // Cek jika halaman telah digulir lebih dari 0px
+          searchMobile.classList.add("hidden"); // Menambahkan kelas hidden untuk menyembunyikan elemen
+        } else {
+          searchMobile.classList.remove("hidden"); // Menghapus kelas hidden untuk menampilkan elemen kembali
+        }
+      });
+    </script>
+    <script>
+      let lastScrollTop = 0;
+      const judulSection = document.getElementById("search-mobile");
+
+      window.addEventListener("scroll", function () {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+          // Scroll ke bawah --> opacity turun
+          judulSection.classList.add("opacity-0");
+          judulSection.classList.remove("opacity-100");
+        } else {
+          // Scroll ke atas --> opacity naik
+          judulSection.classList.add("opacity-100");
+          judulSection.classList.remove("opacity-0");
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
       });
     </script>
   </body>

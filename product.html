@@ -31,7 +31,7 @@
     <title>Document</title>
   </head>
   <body class="mt-14">
-    <header class="fixed top-0 left-0 w-full bg-custom z-50 py-1 px-4">
+    <header class="fixed top-0 left-0 w-full bg-custom z-50 py-3 px-4">
       <nav class="max-w-7xl mx-auto flex justify-between items-center">
         <!-- Kiri: Logo & Navigasi -->
         <div class="flex items-center space-x-6">
@@ -164,286 +164,335 @@
 
     <!-- Section Judul -->
     <!-- Section Judul -->
-    <div id="judul-section" class="fixed top-10 w-full bg-custom transition-all duration-300 z-40">
-      <div class="max-w-7xl mx-auto py-10 px-6">
-        <h1 class="bricolage-font text-3xl font-bold text-teal-900">My Product</h1>
-        <p class="text-gray-600 mt-2">Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,</p>
+ 
+
+    <section class=" mx-auto">
+      <div class="top-7 w-full bg-custom transition-all duration-300 z-40">
+        <div class="max-w-7xl mx-auto py-8 px-6">
+          <h1 class="bricolage-font text-3xl font-bold text-teal-900">My Product</h1>
+          <p class="text-gray-600 mt-2">Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,</p>
+        </div>
       </div>
-    </div>
+      <div class="container max-w-7xl mx-auto" >
 
-    <section class="container mx-auto pt-40">
-      <div class="max-w-7xl mx-auto">
-        <!-- Search bar -->
-        <div class="relative w-full max-w-sm mx-auto mb-6" data-aos="zoom-in" data-aos-delay="200">
-          <!-- Input -->
-
-          <!-- Search Icon -->
-          <!-- Search Section - hanya muncul di layar kecil -->
-          <div class="block md:hidden max-w-md mx-auto p-4">
-            <!-- Search Heading -->
-            <h2 class="text-lg font-semibold text-emerald-800 mb-2">Search</h2>
-
-            <!-- Search Input -->
-            <div class="relative bg-gray-100 rounded-full px-4 py-2 flex items-center">
-              <!-- Icon di dalam input -->
-              <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
-                <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z" />
-                </svg>
+        <div class="max-w-7xl mx-auto">
+          <!-- Search bar -->
+          <div class="relative w-full max-w-sm mx-auto mb-6" data-aos="zoom-in" data-aos-delay="200">
+            <!-- Input -->
+  
+            <!-- Search Icon -->
+            <!-- Search Section - hanya muncul di layar kecil -->
+            <div class="block md:hidden max-w-md mx-auto p-4">
+              <!-- Search Heading -->
+              <h2 class="text-lg font-semibold text-emerald-800 mb-2">Search</h2>
+  
+              <!-- Search Input -->
+              <div class="relative bg-gray-100 rounded-full px-4 py-2 flex items-center">
+                <!-- Icon di dalam input -->
+                <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+                  <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z" />
+                  </svg>
+                </div>
+  
+                <input type="text" placeholder="iPhone 16 Bro" class="bg-transparent w-full pl-10 outline-none placeholder-gray-500 text-sm" />
               </div>
-
-              <input type="text" placeholder="iPhone 16 Bro" class="bg-transparent w-full pl-10 outline-none placeholder-gray-500 text-sm" />
+  
+              <!-- Related Tags -->
+              <div class="mt-3 text-sm">
+                <span class="font-semibold text-gray-700">Related :</span>
+                <div class="inline-flex flex-wrap gap-2 mt-1 items-center">
+                  <!-- Chip Tags -->
+                  <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs">Iphone 6s</span>
+                  <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs">Iphone 7plus</span>
+  
+                  <!-- Divider -->
+                  <span class="w-px h-5 bg-gray-300 mx-1"></span>
+  
+                  <!-- Filter Button -->
+                  <button id="hamburgerButton" class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs inline-flex items-center gap-1 hover:bg-gray-200 m-4 z-30 relative">
+                    Filter
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-.293.707L15 14.414V19a1 1 0 01-1.447.894l-4-2A1 1 0 019 17v-2.586L3.293 6.707A1 1 0 013 6V4z" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
-
-            <!-- Related Tags -->
-            <div class="mt-3 text-sm">
-              <span class="font-semibold text-gray-700">Related :</span>
-              <div class="inline-flex flex-wrap gap-2 mt-1 items-center">
-                <!-- Chip Tags -->
-                <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs">Iphone 6s</span>
-                <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs">Iphone 7plus</span>
-
-                <!-- Divider -->
-                <span class="w-px h-5 bg-gray-300 mx-1"></span>
-
-                <!-- Filter Button -->
-                <button id="hamburgerButton" class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs inline-flex items-center gap-1 hover:bg-gray-200 m-4 z-30 relative">
-                  Filter
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-.293.707L15 14.414V19a1 1 0 01-1.447.894l-4-2A1 1 0 019 17v-2.586L3.293 6.707A1 1 0 013 6V4z" />
+          </div>
+  
+          <div class="flex gap-5 relative">
+            <!-- Sidebar Filters -->
+            <aside
+            id="sidebarMenu"
+            class="pt-36 md:pt-12 w-64 hidden md:block shrink-0 bg-white md:relative fixed top-0 left-0 h-full p-4 z-30 transform transition-transform duration-300 ease-in-out -translate-x-full md:translate-x-0"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
+            <!-- Sidebar content -->
+            <div class="hidden md:block max-w-md mx-auto p-4">
+              <!-- Search -->
+              <h2 class="text-lg font-semibold text-emerald-800 mb-2">Search</h2>
+              <div class="relative bg-gray-100 rounded-full px-4 py-2 flex items-center">
+                <input type="text" placeholder="iPhone 14 Pro" class="bg-transparent w-full outline-none placeholder-gray-500 text-sm" />
+                <button class="ml-2 text-gray-500 hover:text-gray-700">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
                 </button>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="flex gap-5 relative">
-          <!-- Sidebar Filters -->
-          <aside
-          id="sidebarMenu"
-          class="pt-56 md:pt-12 w-64 hidden md:block shrink-0 bg-white md:relative fixed top-0 left-0 h-full p-4 shadow-lg z-30 transform transition-transform duration-300 ease-in-out -translate-x-full md:translate-x-0"
-          data-aos="fade-right"
-          data-aos-delay="100"
-        >
-          <!-- Sidebar content -->
-          <div class="hidden md:block max-w-md mx-auto p-4">
-            <!-- Search -->
-            <h2 class="text-lg font-semibold text-emerald-800 mb-2">Search</h2>
-            <div class="relative bg-gray-100 rounded-full px-4 py-2 flex items-center">
-              <input type="text" placeholder="iPhone 14 Pro" class="bg-transparent w-full outline-none placeholder-gray-500 text-sm" />
-              <button class="ml-2 text-gray-500 hover:text-gray-700">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-              </button>
+        
+            <!-- Filters -->
+            <div class="mb-4">
+              <h2 class="font-semibold mb-2">Filters</h2>
+              <ul class="space-y-1">
+                <li><label><input type="checkbox" checked class="mr-2" />Handphone</label></li>
+                <li><label><input type="checkbox" class="mr-2" />Case</label></li>
+                <li><label><input type="checkbox" class="mr-2" />Charger</label></li>
+                <li><label><input type="checkbox" class="mr-2" />Aksesoris</label></li>
+              </ul>
             </div>
-          </div>
-      
-          <!-- Filters -->
-          <div class="mb-4">
-            <h2 class="font-semibold mb-2">Filters</h2>
-            <ul class="space-y-1">
-              <li><label><input type="checkbox" checked class="mr-2" />Handphone</label></li>
-              <li><label><input type="checkbox" class="mr-2" />Case</label></li>
-              <li><label><input type="checkbox" class="mr-2" />Charger</label></li>
-              <li><label><input type="checkbox" class="mr-2" />Aksesoris</label></li>
-            </ul>
-          </div>
-      
-          <div class="mb-4">
-            <h2 class="font-semibold mb-2">Warna</h2>
-            <ul class="space-y-1">
-              <li><label><input type="checkbox" class="mr-2" />Merah</label></li>
-              <li><label><input type="checkbox" class="mr-2" />Biru</label></li>
-              <li><label><input type="checkbox" class="mr-2" />Putih</label></li>
-              <li><label><input type="checkbox" class="mr-2" />Pink</label></li>
-            </ul>
-          </div>
-      
-          <div>
-            <h2 class="font-semibold mb-2">Kapasitas Memory</h2>
-            <ul class="space-y-1">
-              <li><label><input type="checkbox" class="mr-2" />64GB</label></li>
-              <li><label><input type="checkbox" class="mr-2" />128GB</label></li>
-              <li><label><input type="checkbox" class="mr-2" />256GB</label></li>
-              <li><label><input type="checkbox" class="mr-2" />512GB</label></li>
-              <li><label><input type="checkbox" class="mr-2" />1TB</label></li>
-            </ul>
-          </div>
-        </aside>
-
-          <!-- Product Grid -->
-          <section class="relative mx-auto px-5 md:px-8 flex-1 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-6">
-            <!-- Kartu Produk -->
-            <a href="detailproduct.html" target="_blank" class="block">
-              <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-                <img src="image/14pro.png" alt="Produk" class="w-full h-auto object-cover" />
-                <div class="p-4">
-                  <p class="text-gray-500 text-sm mb-1">Smartphone <span class="ml-2 bg-green-800 text-white text-xs px-2 py-1 rounded-full">30% OFF</span></p>
-                  <h3 class="font-semibold text-lg leading-tight">iPhone 14 Pro max 12gb ram 512gb storage</h3>
-                  <p class="text-green-700 font-bold">
-                    Rp. 1.000.000,-
-                    <span class="text-gray-400 line-through text-sm ml-2">Rp. 1.100.000,-</span>
-                  </p>
-                </div>
-              </div>
-            </a>
-            <!-- Kartu Produk 2 -->
-            <a href="detailproduct.html" target="_blank" class="block">
-              <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-                <img src="image/16pro.png" alt="Produk" class="w-full h-auto object-cover" />
-                <div class="p-4">
-                  <p class="text-gray-500 text-sm mb-1">Smartphone <span class="ml-2 bg-green-800 text-white text-xs px-2 py-1 rounded-full">30% OFF</span></p>
-                  <h3 class="font-semibold text-lg leading-tight">iPhone 14 Pro max 12gb ram 512gb storage</h3>
-                  <p class="text-green-700 font-bold">
-                    Rp. 1.000.000,-
-                    <span class="text-gray-400 line-through text-sm ml-2">Rp. 1.100.000,-</span>
-                  </p>
-                </div>
-              </div>
-            </a>
-            <!-- Kartu Produk 3-->
-            <a href="detailproduct.html" target="_blank" class="block">
-              <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
-                <img src="image/16white.png" alt="Produk" class="w-full h-auto object-cover" />
-                <div class="p-4">
-                  <p class="text-gray-500 text-sm mb-1">Smartphone <span class="ml-2 bg-green-800 text-white text-xs px-2 py-1 rounded-full">30% OFF</span></p>
-                  <h3 class="font-semibold text-lg leading-tight">iPhone 14 Pro max 12gb ram 512gb storage</h3>
-                  <p class="text-green-700 font-bold">
-                    Rp. 1.000.000,-
-                    <span class="text-gray-400 line-through text-sm ml-2">Rp. 1.100.000,-</span>
-                  </p>
-                </div>
-              </div>
-            </a>
-            <!-- Kartu Produk 4-->
-            <a href="detailproduct.html" target="_blank" class="block">
-              <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-                <img src="image/16prowhite.png" alt="Produk" class="w-full h-auto object-cover" />
-                <div class="p-4">
-                  <p class="text-gray-500 text-sm mb-1">Smartphone <span class="ml-2 bg-green-800 text-white text-xs px-2 py-1 rounded-full">30% OFF</span></p>
-                  <h3 class="font-semibold text-lg leading-tight">iPhone 14 Pro max 12gb ram 512gb storage</h3>
-                  <p class="text-green-700 font-bold">
-                    Rp. 1.000.000,-
-                    <span class="text-gray-400 line-through text-sm ml-2">Rp. 1.100.000,-</span>
-                  </p>
-                </div>
-              </div>
-            </a>
-
-            <!-- Kartu Produk 5 -->
-            <a href="detailproduct.html" target="_blank" class="block">
-              <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-                <img src="image/15pro.png" alt="Produk" class="w-full h-auto object-cover" />
-                <div class="p-4">
-                  <p class="text-gray-500 text-sm mb-1">Smartphone <span class="ml-2 bg-green-800 text-white text-xs px-2 py-1 rounded-full">30% OFF</span></p>
-                  <h3 class="font-semibold text-lg leading-tight">iPhone 14 Pro max 12gb ram 512gb storage</h3>
-                  <p class="text-green-700 font-bold">
-                    Rp. 1.000.000,-
-                    <span class="text-gray-400 line-through text-sm ml-2">Rp. 1.100.000,-</span>
-                  </p>
-                </div>
-              </div>
-            </a>
-
-            <!-- Kartu Produk 6-->
-            <a href="detailproduct.html" target="_blank" class="block">
-              <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
-                <img src="image/macbookair1.png" alt="Produk" class="w-full h-auto object-cover" />
-                <div class="p-4">
-                  <p class="text-gray-500 text-sm mb-1">Smartphone <span class="ml-2 bg-green-800 text-white text-xs px-2 py-1 rounded-full">30% OFF</span></p>
-                  <h3 class="font-semibold text-lg leading-tight">iPhone 14 Pro max 12gb ram 512gb storage</h3>
-                  <p class="text-green-700 font-bold">
-                    Rp. 1.000.000,-
-                    <span class="text-gray-400 line-through text-sm ml-2">Rp. 1.100.000,-</span>
-                  </p>
-                </div>
-              </div>
-            </a>
-
-            <!-- Kartu Produk 7-->
-            <a href="detailproduct.html" target="_blank" class="block">
-              <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-                <img src="image/macbookair2.png" alt="Produk" class="w-full h-auto object-cover" />
-                <div class="p-4">
-                  <p class="text-gray-500 text-sm mb-1">Smartphone <span class="ml-2 bg-green-800 text-white text-xs px-2 py-1 rounded-full">30% OFF</span></p>
-                  <h3 class="font-semibold text-lg leading-tight">iPhone 14 Pro max 12gb ram 512gb storage</h3>
-                  <p class="text-green-700 font-bold">
-                    Rp. 1.000.000,-
-                    <span class="text-gray-400 line-through text-sm ml-2">Rp. 1.100.000,-</span>
-                  </p>
-                </div>
-              </div>
-            </a>
-
-            <!-- Kartu Produk 8-->
-            <a href="detailproduct.html" target="_blank" class="block">
-              <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-                <img src="image/asus.png" alt="Produk" class="w-full h-auto object-cover" />
-                <div class="p-4">
-                  <p class="text-gray-500 text-sm mb-1">Smartphone <span class="ml-2 bg-green-800 text-white text-xs px-2 py-1 rounded-full">30% OFF</span></p>
-                  <h3 class="font-semibold text-lg leading-tight">iPhone 14 Pro max 12gb ram 512gb storage</h3>
-                  <p class="text-green-700 font-bold">
-                    Rp. 1.000.000,-
-                    <span class="text-gray-400 line-through text-sm ml-2">Rp. 1.100.000,-</span>
-                  </p>
-                </div>
-              </div>
-            </a>
-
-            <!-- Kartu Produk 9-->
-            <a href="detailproduct.html" target="_blank" class="block">
-              <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
-                <img src="image/vivobook.png" alt="Produk" class="w-full h-auto object-cover" />
-                <div class="p-4">
-                  <p class="text-gray-500 text-sm mb-1">Smartphone <span class="ml-2 bg-green-800 text-white text-xs px-2 py-1 rounded-full">30% OFF</span></p>
-                  <h3 class="font-semibold text-lg leading-tight">iPhone 14 Pro max 12gb ram 512gb storage</h3>
-                  <p class="text-green-700 font-bold">
-                    Rp. 1.000.000,-
-                    <span class="text-gray-400 line-through text-sm ml-2">Rp. 1.100.000,-</span>
-                  </p>
-                </div>
-              </div>
-            </a>
-
-            <!-- Ulangi div di atas untuk 5 produk lainnya -->
-            <!-- Kamu bisa pakai loop atau komponen jika pakai framework -->
-            <div class="flex absolute gap-4" style="top: 105%; left: 50%; transform: translateX(-50%)">
-              <!-- First Page -->
-              <button class="w-10 h-10 rounded-full border border-teal-900 text-teal-900 flex items-center justify-center hover:bg-teal-50">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7M18 19l-7-7 7-7" />
-                </svg>
-              </button>
-
-              <!-- Prev Page -->
-              <button class="w-10 h-10 rounded-full border border-teal-900 text-teal-900 flex items-center justify-center hover:bg-teal-50">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-
-              <!-- Page Numbers -->
-              <button class="w-10 h-10 rounded-full bg-teal-900 text-white font-semibold flex items-center justify-center">1</button>
-              <button class="w-10 h-10 rounded-full border text-teal-900 flex items-center justify-center hover:bg-teal-50">2</button>
-              <button class="w-10 h-10 rounded-full border text-teal-900 flex items-center justify-center hover:bg-teal-50">3</button>
-
-              <!-- Next Page -->
-              <button class="w-10 h-10 rounded-full border border-teal-900 text-teal-900 flex items-center justify-center hover:bg-teal-50">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-
-              <!-- Last Page -->
-              <button class="w-10 h-10 rounded-full border border-teal-900 text-teal-900 flex items-center justify-center hover:bg-teal-50">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 19l7-7-7-7M13 19l7-7-7-7" />
-                </svg>
-              </button>
+        
+            <div class="mb-4">
+              <h2 class="font-semibold mb-2">Warna</h2>
+              <ul class="space-y-1">
+                <li><label><input type="checkbox" class="mr-2" />Merah</label></li>
+                <li><label><input type="checkbox" class="mr-2" />Biru</label></li>
+                <li><label><input type="checkbox" class="mr-2" />Putih</label></li>
+                <li><label><input type="checkbox" class="mr-2" />Pink</label></li>
+              </ul>
             </div>
-          </section>
+        
+            <div>
+              <h2 class="font-semibold mb-2">Kapasitas Memory</h2>
+              <ul class="space-y-1">
+                <li><label><input type="checkbox" class="mr-2" />64GB</label></li>
+                <li><label><input type="checkbox" class="mr-2" />128GB</label></li>
+                <li><label><input type="checkbox" class="mr-2" />256GB</label></li>
+                <li><label><input type="checkbox" class="mr-2" />512GB</label></li>
+                <li><label><input type="checkbox" class="mr-2" />1TB</label></li>
+              </ul>
+            </div>
+          </aside>
+  
+            <!-- Product Grid -->
+            <section class="relative mx-auto px-5 md:px-8 flex-1 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+              <!-- Kartu Produk -->
+              <a href="detailproduct.html" target="_blank" class="block">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                  <img src="image/14pro.png" alt="Produk" class="w-full h-auto object-cover" />
+                              <div class="p-2 md:p-4">
+              <!-- Kategori + Diskon -->
+              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+
+              <!-- Nama Produk -->
+              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+
+              <!-- Harga -->
+              <p class="text-green-700 font-bold text-xs sm:text-base">
+                Rp. 1.000.000,-
+                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
+              </p>
+            </div>
+                </div>
+              </a>
+              <!-- Kartu Produk 2 -->
+              <a href="detailproduct.html" target="_blank" class="block">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                  <img src="image/16pro.png" alt="Produk" class="w-full h-auto object-cover" />
+                  <div class="p-2 md:p-4">
+                    <!-- Kategori + Diskon -->
+                    <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+      
+                    <!-- Nama Produk -->
+                    <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+      
+                    <!-- Harga -->
+                    <p class="text-green-700 font-bold text-xs sm:text-base">
+                      Rp. 1.000.000,-
+                      <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <!-- Kartu Produk 3-->
+              <a href="detailproduct.html" target="_blank" class="block">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                  <img src="image/16white.png" alt="Produk" class="w-full h-auto object-cover" />
+                              <div class="p-2 md:p-4">
+              <!-- Kategori + Diskon -->
+              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+
+              <!-- Nama Produk -->
+              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+
+              <!-- Harga -->
+              <p class="text-green-700 font-bold text-xs sm:text-base">
+                Rp. 1.000.000,-
+                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
+              </p>
+            </div>
+                </div>
+              </a>
+              <!-- Kartu Produk 4-->
+              <a href="detailproduct.html" target="_blank" class="block">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                  <img src="image/16prowhite.png" alt="Produk" class="w-full h-auto object-cover" />
+                              <div class="p-2 md:p-4">
+              <!-- Kategori + Diskon -->
+              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+
+              <!-- Nama Produk -->
+              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+
+              <!-- Harga -->
+              <p class="text-green-700 font-bold text-xs sm:text-base">
+                Rp. 1.000.000,-
+                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
+              </p>
+            </div>
+                </div>
+              </a>
+  
+              <!-- Kartu Produk 5 -->
+              <a href="detailproduct.html" target="_blank" class="block">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                  <img src="image/15pro.png" alt="Produk" class="w-full h-auto object-cover" />
+                              <div class="p-2 md:p-4">
+              <!-- Kategori + Diskon -->
+              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+
+              <!-- Nama Produk -->
+              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+
+              <!-- Harga -->
+              <p class="text-green-700 font-bold text-xs sm:text-base">
+                Rp. 1.000.000,-
+                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
+              </p>
+            </div>
+                </div>
+              </a>
+  
+              <!-- Kartu Produk 6-->
+              <a href="detailproduct.html" target="_blank" class="block">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                  <img src="image/macbookair1.png" alt="Produk" class="w-full h-auto object-cover" />
+                              <div class="p-2 md:p-4">
+              <!-- Kategori + Diskon -->
+              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+
+              <!-- Nama Produk -->
+              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+
+              <!-- Harga -->
+              <p class="text-green-700 font-bold text-xs sm:text-base">
+                Rp. 1.000.000,-
+                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
+              </p>
+            </div>
+                </div>
+              </a>
+  
+              <!-- Kartu Produk 7-->
+              <a href="detailproduct.html" target="_blank" class="block">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                  <img src="image/macbookair2.png" alt="Produk" class="w-full h-auto object-cover" />
+                              <div class="p-2 md:p-4">
+              <!-- Kategori + Diskon -->
+              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+
+              <!-- Nama Produk -->
+              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+
+              <!-- Harga -->
+              <p class="text-green-700 font-bold text-xs sm:text-base">
+                Rp. 1.000.000,-
+                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
+              </p>
+            </div>
+                </div>
+              </a>
+  
+              <!-- Kartu Produk 8-->
+              <a href="detailproduct.html" target="_blank" class="block">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                  <img src="image/asus.png" alt="Produk" class="w-full h-auto object-cover" />
+                              <div class="p-2 md:p-4">
+              <!-- Kategori + Diskon -->
+              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+
+              <!-- Nama Produk -->
+              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+
+              <!-- Harga -->
+              <p class="text-green-700 font-bold text-xs sm:text-base">
+                Rp. 1.000.000,-
+                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
+              </p>
+            </div>
+                </div>
+              </a>
+  
+              <!-- Kartu Produk 9-->
+              <a href="detailproduct.html" target="_blank" class="block">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                  <img src="image/vivobook.png" alt="Produk" class="w-full h-auto object-cover" />
+                              <div class="p-2 md:p-4">
+              <!-- Kategori + Diskon -->
+              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+
+              <!-- Nama Produk -->
+              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+
+              <!-- Harga -->
+              <p class="text-green-700 font-bold text-xs sm:text-base">
+                Rp. 1.000.000,-
+                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
+              </p>
+            </div>
+                </div>
+              </a>
+  
+              <!-- Ulangi div di atas untuk 5 produk lainnya -->
+              <!-- Kamu bisa pakai loop atau komponen jika pakai framework -->
+              <div class="flex absolute gap-4" style="top: 105%; left: 50%; transform: translateX(-50%)">
+                <!-- First Page -->
+                <button class="w-7 md:w-10 h-7 md:h-10 rounded-full border border-teal-900 text-teal-900 flex items-center justify-center hover:bg-teal-50">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7M18 19l-7-7 7-7" />
+                  </svg>
+                </button>
+  
+                <!-- Prev Page -->
+                <button class="w-7 md:w-10 h-7 md:h-10 rounded-full border border-teal-900 text-teal-900 flex items-center justify-center hover:bg-teal-50">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+  
+                <!-- Page Numbers -->
+                <button class="w-7 md:w-10 h-7 md:h-10 rounded-full bg-teal-900 text-white font-semibold flex items-center justify-center">1</button>
+                <button class="w-7 md:w-10 h-7 md:h-10 rounded-full border text-teal-900 flex items-center justify-center hover:bg-teal-50">2</button>
+                <button class="w-7 md:w-10 h-7 md:h-10 rounded-full border text-teal-900 flex items-center justify-center hover:bg-teal-50">3</button>
+  
+                <!-- Next Page -->
+                <button class="w-7 md:w-10 h-7 md:h-10 rounded-full border border-teal-900 text-teal-900 flex items-center justify-center hover:bg-teal-50">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+  
+                <!-- Last Page -->
+                <button class="w-7 md:w-10 h-7 md:h-10 rounded-full border border-teal-900 text-teal-900 flex items-center justify-center hover:bg-teal-50">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 19l7-7-7-7M13 19l7-7-7-7" />
+                  </svg>
+                </button>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
     </section>
@@ -484,7 +533,7 @@
 
           <!-- Kerjasama -->
           <div class="flex flex-row md:flex-col items-center justify-center md:items-start gap-3">
-            <a href="#" class="bg-a text-black text-sm px-4 py-2 rounded-full flex items-center gap-2 hover:scale-105 transition transform" style="width: fit-content">
+            <a href="#" class="bg-a text-black text-xs px-2 py-1 rounded-full flex items-center gap-1 hover:scale-105 transition-transform" style="width: fit-content">
               <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect x="0.256836" y="0.108154" width="39.7838" height="39.7838" fill="url(#pattern0_1_1231)" />
                 <defs>
@@ -505,7 +554,7 @@
                 <span class="block text-base font-bold text-white">Shopee</span>
               </div>
             </a>
-            <a href="#" class="bg-a text-black text-sm px-4 py-2 rounded-full flex items-center gap-2 hover:scale-105 transition transform" style="width: fit-content">
+            <a href="#" class="bg-a text-black text-xs px-2 py-1 rounded-full flex items-center gap-1 hover:scale-105 transition-transform" style="width: fit-content">
               <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect x="0.635254" y="0.108154" width="39.7838" height="39.7838" fill="url(#pattern0_1_1237)" />
                 <defs>
