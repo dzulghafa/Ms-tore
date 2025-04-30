@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <!-- AOS CSS -->
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <style>
       .bg-a {
         background-color: #9fc131;
@@ -22,7 +24,10 @@
         <!-- Kiri: Logo & Navigasi -->
         <div class="flex items-center space-x-6">
           <!-- Logo -->
-          <img src="image/Frame 1597883877.png" alt="Logo" class="h-10" />
+          <a href="index.html">
+            <img src="image/Frame 1597883877.png" alt="Logo" class="h-10" />
+          </a>
+          
     
           <!-- Desktop Navigation -->
           <div class="hidden md:flex space-x-6">
@@ -148,10 +153,10 @@
       
     </header>
     <section class="pt-1 md:pt-0 mx-4 my-10 md:m-28 mb-6 md:mb-10">
-      <div class="bg-teal-900 text-white text-center md:text-left rounded-2xl p-3 md:p-8 max-w-7xl mx-auto my-10">
+      <div class="bg-teal-900 text-white text-center md:text-left rounded-2xl p-3 md:p-8 max-w-7xl mx-auto my-10" data-aos="fade-up" data-aos-delay="100">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- KIRI: Info Kontak -->
-          <div class="space-y-6 text-center md:text-left">
+          <div class="space-y-6 text-center md:text-left" data-aos="fade-right" data-aos-delay="200">
             <div>
               <h2 class="text-3xl font-bold mb-2">Let's Talk</h2>
               <p class="text-sm leading-relaxed">
@@ -206,7 +211,7 @@
 
 
           <!-- KANAN: Formulir -->
-          <form id="contactForm" class=" relative p-0 md:p-6 rounded-md grid gap-4">
+          <form id="contactForm" class=" relative p-0 md:p-6 rounded-md grid gap-4" data-aos="fade-left" data-aos-delay="200">
             <input type="text" placeholder="Full name *" required class="w-full p-3 rounded-md bg-black/25  placeholder-white text-white focus:outline-none" />
             <input type="email" placeholder="Email *" required class="w-full p-3 rounded-md bg-black/25 placeholder-white text-white focus:outline-none" />
             <input type="tel" placeholder="Phone Number *" required class="w-full p-3 rounded-md bg-black/25 placeholder-white text-white focus:outline-none" />
@@ -232,8 +237,8 @@
         </div>
       </div>
     </section>
-    <footer class="bg-white pt-10 pb-6 px-6 md:px-16">
-      <div class="max-w-7xl mx-auto">
+    <footer class="bg-white pt-10 pb-6 px-6 md:px-16" data-aos="fade-up" data-aos-delay="100">
+      <div class="max-w-7xl mx-auto" data-aos="fade-up" data-aos-delay="100">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-10 text-center md:text-left">
           <!-- Kiri - Logo dan Deskripsi -->
           <div class="flex flex-col items-center md:items-start">
@@ -345,12 +350,18 @@
         }, 3000);
       });
     </script>
+    <script>
+      const menuButton = document.getElementById('menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+    
+      menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
         <script>
-          const menuButton = document.getElementById('menu-button');
-          const mobileMenu = document.getElementById('mobile-menu');
-        
-          menuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+          AOS.init({
+            once: true, // biar animasi cuma sekali saat pertama kelihatan
           });
         </script>
   </body>

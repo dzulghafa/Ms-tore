@@ -31,12 +31,15 @@
     <title>Document</title>
   </head>
   <body class="mt-14">
-    <header class="fixed top-0 left-0 w-full bg-custom z-50 py-3 px-4">
+    <header class="fixed top-0 left-0 w-full bg-custom z-50 py-1 px-4">
       <nav class="max-w-7xl mx-auto flex justify-between items-center">
         <!-- Kiri: Logo & Navigasi -->
         <div class="flex items-center space-x-6">
           <!-- Logo -->
-          <img src="image/Frame 1597883877.png" alt="Logo" class="h-10" />
+          <a href="index.html">
+            <img src="image/Frame 1597883877.png" alt="Logo" class="h-10" />
+          </a>
+
     
           <!-- Desktop Navigation -->
           <div class="hidden md:flex space-x-6">
@@ -45,7 +48,7 @@
             <!-- Product -->
             <div class="relative group">
               <a href="product.html">
-                <button class="text-gray-700 hover:text-black hover:font-bold flex items-center">
+                <button class="text-black font-semibold hover:text-black hover:font-bold flex items-center">
                   Product
                 </button>
               </a>
@@ -130,7 +133,7 @@
     
       <!-- Mobile Dropdown -->
       <div id="mobile-menu"
-        class="md:hidden hidden bg-white shadow-lg rounded-lg absolute top-16 left-0 w-full z-40">
+        class="md:hidden hidden bg-white shadow-lg rounded-lg absolute top-12 left-0 w-full z-40">
         <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
     
         <!-- Product -->
@@ -167,7 +170,7 @@
  
 
     <section class=" mx-auto">
-      <div class="top-7 w-full bg-custom transition-all duration-300 z-40">
+      <div class=" w-full bg-custom transition-all duration-300 z-40">
         <div class="max-w-7xl mx-auto py-8 px-6">
           <h1 class="bricolage-font text-3xl font-bold text-teal-900">My Product</h1>
           <p class="text-gray-600 mt-2">Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,</p>
@@ -225,12 +228,12 @@
             <!-- Sidebar Filters -->
             <aside
             id="sidebarMenu"
-            class="pt-36 md:pt-12 w-64 hidden md:block shrink-0 bg-white md:relative fixed top-0 left-0 h-full p-4 z-30 transform transition-transform duration-300 ease-in-out -translate-x-full md:translate-x-0"
+            class="pt-12 md:pt-0 w-64 hidden md:block shrink-0 bg-white md:relative fixed top-0 left-0 h-full p-4 z-30 transform transition-transform duration-300 ease-in-out -translate-x-full md:translate-x-0"
             data-aos="fade-right"
             data-aos-delay="100"
           >
             <!-- Sidebar content -->
-            <div class="hidden md:block max-w-md mx-auto p-4">
+            <div class="hidden md:block max-w-md mx-auto  pb-0">
               <!-- Search -->
               <h2 class="text-lg font-semibold text-emerald-800 mb-2">Search</h2>
               <div class="relative bg-gray-100 rounded-full px-4 py-2 flex items-center">
@@ -241,16 +244,28 @@
                   </svg>
                 </button>
               </div>
+              <div class="pt-3">
+                <span class="font-semibold text-gray-700">Related :</span>
+                <div class="inline-flex flex-wrap gap-2 mt-1 items-center">
+                  <!-- Chip Tags -->
+                  <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs">Iphone 6s</span>
+                  <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs">Iphone 7plus</span>
+    
+    
+                </div>
+              </div>
             </div>
+
+
         
             <!-- Filters -->
-            <div class="mb-4">
+            <div class="mb-4 mt-4">
               <h2 class="font-semibold mb-2">Filters</h2>
               <ul class="space-y-1">
-                <li><label><input type="checkbox" checked class="mr-2" />Handphone</label></li>
-                <li><label><input type="checkbox" class="mr-2" />Case</label></li>
-                <li><label><input type="checkbox" class="mr-2" />Charger</label></li>
-                <li><label><input type="checkbox" class="mr-2" />Aksesoris</label></li>
+                <li><label><input type="checkbox" class="filter-checkbox" value="Handphone" class="mr-2"/> Handphone </label></li>
+                <li><label><input type="checkbox" class="filter-checkbox" value="laptop" class="mr-2"/> Laptop</label></li>
+                <li><label><input type="checkbox" class="filter-checkbox" value="apple" class="mr-2"/> Apple</label></li>
+                <li><label><input type="checkbox" class="filter-checkbox" value="asus" class="mr-2"/> Asus</label></li>
               </ul>
             </div>
         
@@ -279,181 +294,207 @@
             <!-- Product Grid -->
             <section class="relative mx-auto px-5 md:px-8 flex-1 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
               <!-- Kartu Produk -->
-              <a href="detailproduct.html" target="_blank" class="block">
-                <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-                  <img src="image/14pro.png" alt="Produk" class="w-full h-auto object-cover" />
-                              <div class="p-2 md:p-4">
-              <!-- Kategori + Diskon -->
-              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
-
-              <!-- Nama Produk -->
-              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
-
-              <!-- Harga -->
-              <p class="text-green-700 font-bold text-xs sm:text-base">
-                Rp. 1.000.000,-
-                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
-              </p>
-            </div>
-                </div>
-              </a>
-              <!-- Kartu Produk 2 -->
-              <a href="detailproduct.html" target="_blank" class="block">
-                <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-                  <img src="image/16pro.png" alt="Produk" class="w-full h-auto object-cover" />
-                  <div class="p-2 md:p-4">
-                    <!-- Kategori + Diskon -->
-                    <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
-      
-                    <!-- Nama Produk -->
-                    <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
-      
-                    <!-- Harga -->
-                    <p class="text-green-700 font-bold text-xs sm:text-base">
-                      Rp. 1.000.000,-
-                      <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
-                    </p>
+              <div class="product" data-category="Handphone, apple">
+                <a href="detailproduct.html" target="_blank" class="block">
+                  <div class="bg-white rounded-xl shadow-md overflow-hidden" >
+                    <img src="image/14pro.png" alt="Produk" class="w-full h-auto object-cover" />
+                    <div class="p-2 md:p-4">
+                      <!-- Kategori + Diskon -->
+                      <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">
+                        Smartphone 
+                        <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">
+                          30% OFF
+                        </span>
+                      </p>
+              
+                      <!-- Nama Produk -->
+                      <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">
+                        iPhone 14 Pro Max 12GB RAM 512GB Storage
+                      </h3>
+              
+                      <!-- Harga -->
+                      <p class="text-green-700 font-bold text-xs sm:text-base">
+                        Rp. 1.000.000,-
+                        <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
+              
+              <!-- Kartu Produk 2 -->
+              <div class="product" data-category="Handphone apple">
+                <a href="detailproduct.html" target="_blank" class="block">
+                  <div class="bg-white rounded-xl shadow-md overflow-hidden" >
+                    <img src="image/16pro.png" alt="Produk" class="w-full h-auto object-cover" />
+                    <div class="p-2 md:p-4">
+                      <!-- Kategori + Diskon -->
+                      <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+        
+                      <!-- Nama Produk -->
+                      <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+        
+                      <!-- Harga -->
+                      <p class="text-green-700 font-bold text-xs sm:text-base">
+                        Rp. 1.000.000,-
+                        <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
               <!-- Kartu Produk 3-->
-              <a href="detailproduct.html" target="_blank" class="block">
-                <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
-                  <img src="image/16white.png" alt="Produk" class="w-full h-auto object-cover" />
-                              <div class="p-2 md:p-4">
-              <!-- Kategori + Diskon -->
-              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
-
-              <!-- Nama Produk -->
-              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
-
-              <!-- Harga -->
-              <p class="text-green-700 font-bold text-xs sm:text-base">
-                Rp. 1.000.000,-
-                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
-              </p>
-            </div>
-                </div>
-              </a>
+              <div class="product" data-category="Handphone apple">
+                <a href="detailproduct.html" target="_blank" class="block">
+                  <div class="bg-white rounded-xl shadow-md overflow-hidden" >
+                    <img src="image/16white.png" alt="Produk" class="w-full h-auto object-cover" />
+                                <div class="p-2 md:p-4">
+                <!-- Kategori + Diskon -->
+                <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+  
+                <!-- Nama Produk -->
+                <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+  
+                <!-- Harga -->
+                <p class="text-green-700 font-bold text-xs sm:text-base">
+                  Rp. 1.000.000,-
+                  <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
+                </p>
+              </div>
+                  </div>
+                </a>
+              </div>
               <!-- Kartu Produk 4-->
-              <a href="detailproduct.html" target="_blank" class="block">
-                <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-                  <img src="image/16prowhite.png" alt="Produk" class="w-full h-auto object-cover" />
-                              <div class="p-2 md:p-4">
-              <!-- Kategori + Diskon -->
-              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
-
-              <!-- Nama Produk -->
-              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
-
-              <!-- Harga -->
-              <p class="text-green-700 font-bold text-xs sm:text-base">
-                Rp. 1.000.000,-
-                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
-              </p>
-            </div>
-                </div>
-              </a>
+              <div class="product" data-category="Handphone apple">
+                <a href="detailproduct.html" target="_blank" class="block">
+                  <div class="bg-white rounded-xl shadow-md overflow-hidden" >
+                    <img src="image/16prowhite.png" alt="Produk" class="w-full h-auto object-cover" />
+                                <div class="p-2 md:p-4">
+                <!-- Kategori + Diskon -->
+                <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+  
+                <!-- Nama Produk -->
+                <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+  
+                <!-- Harga -->
+                <p class="text-green-700 font-bold text-xs sm:text-base">
+                  Rp. 1.000.000,-
+                  <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
+                </p>
+              </div>
+                  </div>
+                </a>
+              </div>
   
               <!-- Kartu Produk 5 -->
-              <a href="detailproduct.html" target="_blank" class="block">
-                <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-                  <img src="image/15pro.png" alt="Produk" class="w-full h-auto object-cover" />
-                              <div class="p-2 md:p-4">
-              <!-- Kategori + Diskon -->
-              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
-
-              <!-- Nama Produk -->
-              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
-
-              <!-- Harga -->
-              <p class="text-green-700 font-bold text-xs sm:text-base">
-                Rp. 1.000.000,-
-                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
-              </p>
-            </div>
-                </div>
-              </a>
+              <div class="product" data-category="Handphone apple">
+                <a href="detailproduct.html" target="_blank" class="block">
+                  <div class="bg-white rounded-xl shadow-md overflow-hidden" >
+                    <img src="image/15pro.png" alt="Produk" class="w-full h-auto object-cover" />
+                                <div class="p-2 md:p-4">
+                <!-- Kategori + Diskon -->
+                <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+  
+                <!-- Nama Produk -->
+                <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+  
+                <!-- Harga -->
+                <p class="text-green-700 font-bold text-xs sm:text-base">
+                  Rp. 1.000.000,-
+                  <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
+                </p>
+              </div>
+                  </div>
+                </a>
+              </div>
   
               <!-- Kartu Produk 6-->
-              <a href="detailproduct.html" target="_blank" class="block">
-                <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
-                  <img src="image/macbookair1.png" alt="Produk" class="w-full h-auto object-cover" />
-                              <div class="p-2 md:p-4">
-              <!-- Kategori + Diskon -->
-              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
-
-              <!-- Nama Produk -->
-              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
-
-              <!-- Harga -->
-              <p class="text-green-700 font-bold text-xs sm:text-base">
-                Rp. 1.000.000,-
-                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
-              </p>
-            </div>
-                </div>
-              </a>
+              <div class="product" data-category="laptop apple">
+                <a href="detailproduct.html" target="_blank" class="block">
+                  <div class="bg-white rounded-xl shadow-md overflow-hidden" >
+                    <img src="image/macbookair1.png" alt="Produk" class="w-full h-auto object-cover" />
+                                <div class="p-2 md:p-4">
+                <!-- Kategori + Diskon -->
+                <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+  
+                <!-- Nama Produk -->
+                <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+  
+                <!-- Harga -->
+                <p class="text-green-700 font-bold text-xs sm:text-base">
+                  Rp. 1.000.000,-
+                  <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
+                </p>
+              </div>
+                  </div>
+                </a>
+              </div>
   
               <!-- Kartu Produk 7-->
-              <a href="detailproduct.html" target="_blank" class="block">
-                <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-                  <img src="image/macbookair2.png" alt="Produk" class="w-full h-auto object-cover" />
-                              <div class="p-2 md:p-4">
-              <!-- Kategori + Diskon -->
-              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
-
-              <!-- Nama Produk -->
-              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
-
-              <!-- Harga -->
-              <p class="text-green-700 font-bold text-xs sm:text-base">
-                Rp. 1.000.000,-
-                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
-              </p>
-            </div>
-                </div>
-              </a>
+              <div class="product" data-category="laptop apple">
+                <a href="detailproduct.html" target="_blank" class="block">
+                  <div class="bg-white rounded-xl shadow-md overflow-hidden" >
+                    <img src="image/macbookair2.png" alt="Produk" class="w-full h-auto object-cover" />
+                                <div class="p-2 md:p-4">
+                <!-- Kategori + Diskon -->
+                <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+  
+                <!-- Nama Produk -->
+                <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+  
+                <!-- Harga -->
+                <p class="text-green-700 font-bold text-xs sm:text-base">
+                  Rp. 1.000.000,-
+                  <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
+                </p>
+              </div>
+                  </div>
+                </a>
+              </div>
   
               <!-- Kartu Produk 8-->
-              <a href="detailproduct.html" target="_blank" class="block">
-                <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-                  <img src="image/asus.png" alt="Produk" class="w-full h-auto object-cover" />
-                              <div class="p-2 md:p-4">
-              <!-- Kategori + Diskon -->
-              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
-
-              <!-- Nama Produk -->
-              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
-
-              <!-- Harga -->
-              <p class="text-green-700 font-bold text-xs sm:text-base">
-                Rp. 1.000.000,-
-                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
-              </p>
-            </div>
-                </div>
-              </a>
+              <div class="product" data-category="laptop asus">
+                <a href="detailproduct.html" target="_blank" class="block">
+                  <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <img src="image/asus.png" alt="Produk" class="w-full h-auto object-cover" />
+                                <div class="p-2 md:p-4">
+                <!-- Kategori + Diskon -->
+                <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+  
+                <!-- Nama Produk -->
+                <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+  
+                <!-- Harga -->
+                <p class="text-green-700 font-bold text-xs sm:text-base">
+                  Rp. 1.000.000,-
+                  <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
+                </p>
+              </div>
+                  </div>
+                </a>
+              </div>
   
               <!-- Kartu Produk 9-->
-              <a href="detailproduct.html" target="_blank" class="block">
-                <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
-                  <img src="image/vivobook.png" alt="Produk" class="w-full h-auto object-cover" />
-                              <div class="p-2 md:p-4">
-              <!-- Kategori + Diskon -->
-              <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
-
-              <!-- Nama Produk -->
-              <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
-
-              <!-- Harga -->
-              <p class="text-green-700 font-bold text-xs sm:text-base">
-                Rp. 1.000.000,-
-                <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
-              </p>
-            </div>
-                </div>
-              </a>
+              <div class="product" data-category="laptop asus">
+                <a href="detailproduct.html" target="_blank" class="block">
+                  <div class="bg-white rounded-xl shadow-md overflow-hidden" >
+                    <img src="image/vivobook.png" alt="Produk" class="w-full h-auto object-cover" />
+                                <div class="p-2 md:p-4">
+                <!-- Kategori + Diskon -->
+                <p class="text-gray-500 text-xs sm:text-base mb-1 text-center sm:text-left">Smartphone <span class="ml-0 bg-green-800 text-white text-[10px] sm:text-xs px-2 md:px-2 py-0.5 md:py-1 rounded-full">30% OFF</span></p>
+  
+                <!-- Nama Produk -->
+                <h3 class="font-semibold text-xs sm:text-base md:text-lg leading-tight mb-1">iPhone 14 Pro Max 12GB RAM 512GB Storage</h3>
+  
+                <!-- Harga -->
+                <p class="text-green-700 font-bold text-xs sm:text-base">
+                  Rp. 1.000.000,-
+                  <span class="text-gray-400 line-through text-xs sm:text-sm ml-2">Rp. 1.100.000,-</span>
+                </p>
+              </div>
+                  </div>
+                </a>
+              </div>
   
               <!-- Ulangi div di atas untuk 5 produk lainnya -->
               <!-- Kamu bisa pakai loop atau komponen jika pakai framework -->
@@ -497,8 +538,8 @@
       </div>
     </section>
 
-    <footer class="bg-white mt-10 md:mt-12 pt-32 pb-6 px-6 md:px-16">
-      <div class="max-w-7xl mx-auto">
+    <footer class="bg-white mt-10 md:mt-12 pt-32 pb-6 px-6 md:px-16" >
+      <div class="max-w-7xl mx-auto" data-aos="fade-up" data-aos-delay="100">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-10 text-center md:text-left">
           <!-- Kiri - Logo dan Deskripsi -->
           <div class="flex flex-col items-center md:items-start">
@@ -625,6 +666,13 @@
       menuButton.addEventListener("click", () => {
         mobileMenu.classList.toggle("hidden");
       });
+
+      window.addEventListener("scroll", function () {
+    const mobileMenu = document.getElementById("mobile-menu");
+    if (!mobileMenu.classList.contains("hidden")) {
+      mobileMenu.classList.add("hidden");
+    }
+  });
     </script>
 <script>
   const sidebarMenu = document.getElementById("sidebarMenu");
@@ -642,6 +690,32 @@
     }
   });
 </script>
+<!-- logika filter -->
+<script>
+const checkboxes = document.querySelectorAll(".filter-checkbox");
+const products = document.querySelectorAll(".product");
+
+checkboxes.forEach(cb => {
+  cb.addEventListener("change", () => {
+    const selected = [];
+
+    checkboxes.forEach(c => {
+      if (c.checked) {
+        selected.push(c.value);
+      }
+    });
+
+    products.forEach(product => {
+      const categories = product.dataset.category.toLowerCase().split(" ");
+      const isVisible = selected.some(sel => categories.includes(sel.toLowerCase()));
+
+      product.style.display = selected.length === 0 || isVisible ? "block" : "none";
+    });
+  });
+});
+
+</script>
+
 
   </body>
 </html>
